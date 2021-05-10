@@ -9,9 +9,11 @@ const employeeSchema = Schema({
   legislative_process: { type: String, default: false },
   members: [
     {
-      firstName: String,
-      lastName: String,
-      age: String,
+      newid: String,
+      newstate: String,
+      newname: String,
+      newstatus: String,
+      newlegislative_process: String,
     },
   ],
 });
