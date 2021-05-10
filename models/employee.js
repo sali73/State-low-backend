@@ -7,7 +7,7 @@ const employeeSchema = Schema({
   name: { type: String, required: false },
   status: { type: String, default: false },
   legislative_process: { type: String, default: false },
-  members: [
+  newData: [
     {
       newid: String,
       newstate: String,
