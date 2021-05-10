@@ -7,15 +7,6 @@ const employeeSchema = Schema({
   name: { type: String, required: false },
   status: { type: String, default: false },
   legislative_process: { type: String, default: false },
-  newData: [
-    {
-      newid: String,
-      newstate: String,
-      newname: String,
-      newstatus: String,
-      newlegislative_process: String,
-    },
-  ],
 });
 
 const Employee = model("employee", employeeSchema);
