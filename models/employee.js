@@ -8,6 +8,7 @@ const employeeSchema = Schema({
   status: { type: String, default: false },
   legislative_process: { type: String, default: false },
   time: { type: Date, default: Date.now },
+  details: { type: String, required: false },
 });
 
 const Employee = model("employee", employeeSchema);
