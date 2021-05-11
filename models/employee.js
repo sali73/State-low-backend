@@ -7,6 +7,7 @@ const employeeSchema = Schema({
   name: { type: String, required: false },
   status: { type: String, default: false },
   legislative_process: { type: String, default: false },
+  time: { type: Date, default: Date.now },
 });
 
 const Employee = model("employee", employeeSchema);
